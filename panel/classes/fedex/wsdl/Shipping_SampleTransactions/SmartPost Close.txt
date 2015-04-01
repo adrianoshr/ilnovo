@@ -1,0 +1,31 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://fedex.com/ws/close/v2">
+<SOAP-ENV:Body>
+<ns1:SmartPostCloseRequest>
+<ns1:WebAuthenticationDetail>
+<ns1:UserCredential>
+<ns1:Key>“Input Your Information”</ns1:Key>
+<ns1:Password>“Input Your Information”</ns1:Password>
+</ns1:UserCredential>
+</ns1:WebAuthenticationDetail>
+<ns1:ClientDetail>
+<ns1:AccountNumber>“Input Your Information”</ns1:AccountNumber>
+<ns1:MeterNumber>“Input Your Information”</ns1:MeterNumber>
+</ns1:ClientDetail>
+<ns1:TransactionDetail>
+<ns1:CustomerTransactionId>*** SmartPost Close Request v2.***</ns1:CustomerTransactionId>
+</ns1:TransactionDetail>
+<ns1:Version>
+<ns1:ServiceId>clos</ns1:ServiceId>
+<ns1:Major>2</ns1:Major>
+<ns1:Intermediate>1</ns1:Intermediate>
+<ns1:Minor>0</ns1:Minor>
+</ns1:Version>
+<ns1:HubId>XXX</ns1:HubId>
+<ns1:CustomerManifestId>manifest-Id</ns1:CustomerManifestId>
+<ns1:DestinationCountryCode>US</ns1:DestinationCountryCode>
+<ns1:PickUpCarrier>FXSP</ns1:PickUpCarrier>
+</ns1:SmartPostCloseRequest>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+

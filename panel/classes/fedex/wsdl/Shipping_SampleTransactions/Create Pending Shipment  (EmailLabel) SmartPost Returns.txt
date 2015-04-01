@@ -1,0 +1,144 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <SOAP-ENV:Body>
+      <CreatePendingShipmentRequest xmlns="http://fedex.com/ws/ship/v13">
+         <WebAuthenticationDetail>
+            <UserCredential>
+               <Key>"Input Your Information"</Key>
+               <Password>"Input Your Information"</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>"Input Your Information"</AccountNumber>
+            <MeterNumber>"Input Your Information"</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>Create Pending Shipment  (EmailLabel) SmartPost Returns</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>13</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2013-08-16T09:30:47-05:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>SMART_POST</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <Shipper>
+               <AccountNumber>"Input Your Information"</AccountNumber>
+               <Contact>
+                  <PersonName>Sender Contact</PersonName>
+                  <CompanyName>WAPI_Sender</CompanyName>
+                  <PhoneNumber>1234567890</PhoneNumber>
+               </Contact>
+               <Address>
+                  <StreetLines>Test Sender Address Line1</StreetLines>
+                  <City>Collierville</City>
+                  <StateOrProvinceCode>TN</StateOrProvinceCode>
+                  <PostalCode>38017</PostalCode>
+                  <CountryCode>US</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <AccountNumber>"Input Your Information"</AccountNumber>
+               <Contact>
+                  <PersonName>Recipient Contact</PersonName>
+                  <CompanyName>WAPI_Receiver</CompanyName>
+                  <PhoneNumber>1234567890</PhoneNumber>
+               </Contact>
+               <Address>
+                  <StreetLines>Recipient Address Line1</StreetLines>
+                  <City>Austin</City>
+                  <StateOrProvinceCode>TX</StateOrProvinceCode>
+                  <PostalCode>73301</PostalCode>
+                  <CountryCode>US</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>"Input Your Information"</AccountNumber>
+                     <Contact>
+                        <PersonName>Sender Contact</PersonName>
+                        <CompanyName>WAPI_Sender</CompanyName>
+                        <PhoneNumber>1234567890</PhoneNumber>
+                     </Contact>
+                     <Address>
+                        <StreetLines>Test Sender Address Line1</StreetLines>
+                        <City>Collierville</City>
+                        <StateOrProvinceCode>TN</StateOrProvinceCode>
+                        <PostalCode>38017</PostalCode>
+                        <CountryCode>US</CountryCode>
+                     </Address>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <SpecialServicesRequested>
+               <SpecialServiceTypes>EMAIL_NOTIFICATION</SpecialServiceTypes>
+               <SpecialServiceTypes>RETURN_SHIPMENT</SpecialServiceTypes>
+               <SpecialServiceTypes>PENDING_SHIPMENT</SpecialServiceTypes>
+               <EMailNotificationDetail>
+                  <Recipients>
+                     <EMailNotificationRecipientType>SHIPPER</EMailNotificationRecipientType>
+                     <EMailAddress>syntel.kale.osv@fedex.com</EMailAddress>
+                     <Format>HTML</Format>
+                     <Localization>
+                        <LanguageCode>es</LanguageCode>
+                        <LocaleCode>ES</LocaleCode>
+                     </Localization>
+                  </Recipients>
+               </EMailNotificationDetail>
+               <ReturnShipmentDetail>
+                  <ReturnType>PENDING</ReturnType>
+                  <Rma>
+                     <Reason>String</Reason>
+                  </Rma>
+                  <ReturnEMailDetail>
+                     <MerchantPhoneNumber>12547896320</MerchantPhoneNumber>
+                  </ReturnEMailDetail>
+               </ReturnShipmentDetail>
+               <PendingShipmentDetail>
+                  <Type>EMAIL</Type>
+                  <ExpirationDate>2013-08-16</ExpirationDate>
+                  <EmailLabelDetail>
+                     <NotificationEMailAddress>pooja_pawani@syntelinc.com</NotificationEMailAddress>
+                     <NotificationMessage>shipmentisdonetracpending</NotificationMessage>
+                  </EmailLabelDetail>
+               </PendingShipmentDetail>
+            </SpecialServicesRequested>
+            <SmartPostDetail>
+               <Indicia>PARCEL_RETURN</Indicia>
+               <AncillaryEndorsement>ADDRESS_CORRECTION</AncillaryEndorsement>
+               <HubId>5531</HubId>
+               <CustomerManifestId>MANIFSETID</CustomerManifestId>
+            </SmartPostDetail>
+            <LabelSpecification>
+               <LabelFormatType>COMMON2D</LabelFormatType>
+               <ImageType>PNG</ImageType>
+            </LabelSpecification>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <InsuredValue>
+                  <Currency>USD</Currency>
+                  <Amount>00.00</Amount>
+               </InsuredValue>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>20.0</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>10</Length>
+                  <Width>10</Width>
+                  <Height>10</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <ItemDescription>Item1</ItemDescription>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </CreatePendingShipmentRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

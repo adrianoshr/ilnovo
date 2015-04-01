@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v13="http://fedex.com/ws/ship/v13">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v13:CancelPendingShipmentRequest>
+         <v13:WebAuthenticationDetail>
+            <v13:UserCredential>
+               <v13:Key>"Input Your Information"</v13:Key>
+               <v13:Password>"Input Your Information"</v13:Password>
+            </v13:UserCredential>
+         </v13:WebAuthenticationDetail>
+         <v13:ClientDetail>
+            <v13:AccountNumber>"Input Your Information"</v13:AccountNumber>
+            <v13:MeterNumber>"Input Your Information"</v13:MeterNumber>
+            <v13:IntegratorId>12345</v13:IntegratorId>
+            <v13:Localization>
+               <v13:LanguageCode>EN</v13:LanguageCode>
+               <v13:LocaleCode>ES</v13:LocaleCode>
+            </v13:Localization>
+         </v13:ClientDetail>
+         <v13:TransactionDetail>
+            <v13:CustomerTransactionId>Cancel Pending Shipment (EmailLabel)</v13:CustomerTransactionId>
+            <v13:Localization>
+               <v13:LanguageCode>EN</v13:LanguageCode>
+               <v13:LocaleCode>ES</v13:LocaleCode>
+            </v13:Localization>
+         </v13:TransactionDetail>
+         <v13:Version>
+            <v13:ServiceId>ship</v13:ServiceId>
+            <v13:Major>13</v13:Major>
+            <v13:Intermediate>0</v13:Intermediate>
+            <v13:Minor>0</v13:Minor>
+         </v13:Version>
+         <v13:TrackingId>
+            <v13:TrackingIdType>GROUND</v13:TrackingIdType>
+            <v13:FormId>0201</v13:FormId>
+            <v13:TrackingNumber>"Input Your Information"</v13:TrackingNumber>
+         </v13:TrackingId>
+      </v13:CancelPendingShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,187 @@
+/*@font-face{
+    font-family: bookline;
+    src: url(../../../fonts/font_nan/Gotham-Book.ttf);
+}
+
+@font-face{
+    font-family: bookline_light;
+    src: url(../../../fonts/font_nan/Gotham-Book.ttf);
+    font-weight: bold;
+}*/
+
+.div_listado_empleados .cliente:last-child{
+  border-bottom: 0px;
+}
+.empleado{
+  padding: 5px 3px;
+  cursor: pointer;
+}
+.empleado:hover{
+  background-color: @gray-exlight-bookline;
+}
+.seleccionado, .seleccionado:hover{
+  background-color: @pink-bookline;
+  color:@white-bookline;
+}
+.empleado span{
+  font-size: 13px;
+}
+#lb_nombre_mes{
+  display: inline-block;
+}
+#DIV_1 {
+    color: rgb(51, 51, 51);
+    float: left;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    width: 115px;
+    perspective-origin: 58px 67.5px;
+    transform-origin: 58px 67.5px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 2px solid rgb(201, 202, 197);
+    font: normal normal normal 14px/normal DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    padding: 8px 0px 0px;
+}/*#DIV_1*/
+
+#DIV_2 {
+    color: rgb(51, 51, 51);
+    height: 11px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-transform: uppercase;
+    perspective-origin: 56px 6px;
+    transform-origin: 56px 6px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal 11px/11px DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+    padding: 1px 0px 0px;
+}/*#DIV_2*/
+
+#DIV_3 {
+    color: rgb(51, 51, 51);
+    height: 65px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    perspective-origin: 56px 32.5px;
+    transform-origin: 56px 32.5px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal bold 65px/69px DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+}/*#DIV_3*/
+
+#DIV_4 {
+    color: rgb(51, 51, 51);
+    height: 17px;
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-transform: uppercase;
+    perspective-origin: 56px 10px;
+    transform-origin: 56px 10px;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal 11px/11px DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+    padding: 3px 0px 0px;
+}/*#DIV_4*/
+
+#SPAN_5, #SPAN_6 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-transform: uppercase;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal 11px/11px DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+}/*#SPAN_5, #SPAN_6*/
+
+#DIV_7 {
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-decoration: none solid rgb(51, 51, 51);
+    text-transform: uppercase;
+    perspective-origin: 56px 13px;
+    transform-origin: 56px 13px;
+    background: rgb(201, 202, 197) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal bold 18px DINWebPro, Arial, Helvetica, sans-serif;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+    padding: 2px 0px 0px;
+}/*#DIV_7*/
+
+/*modal Ventana de Citas*/
+#lb_dia_mes{
+	font-family: 'bookline';
+	color: @gray-bookline;
+}
+#Form-Cita, #lb_dia_semana, #lb_nombre_mes, #lb_horainicio{
+	font-family: 'bookline';
+	color: @gray-bookline;
+}
+tr.overlink:hover {
+    background: @gray-exlight-bookline;
+    color: #000;
+    -webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+.ellipsis{
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/*Para todos los select*/
+.styled-select {
+    width: 100%;
+    height: 34px;
+    overflow: hidden;
+    background: url('../img/caret-icon.png') no-repeat scroll right center;
+    border: 1px solid #d8d8d8;
+
+}
+.styled-select select {
+    background: none repeat scroll 0% 0% transparent;
+    width: 104%;
+    padding: 5px;
+    border: 0px none;
+    border-radius: 0px;
+    font-size: 16px;
+    line-height: 1;
+    height: 34px;
+}
+select>option:hover
+    {
+        color: #1B517E;
+        cursor: pointer;
+    }
+select {
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #d8d8d8;
+    padding: 4px;
+    color: #555;
+}
+ select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0px;
+}
+@media only screen and (max-width: 620px) and (min-width: 0px) {
+	
+}
+
+@media only screen and (max-width: 980px) and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 980px) {
+	
+}
