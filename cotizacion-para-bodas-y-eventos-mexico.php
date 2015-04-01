@@ -109,7 +109,7 @@
                             <div class="form_content">
                                 <div id="result"></div>
                                 <form id="form1" method="post" action="">
-                                    <h3 class="form_subtitle">Selecciona tu tipo de evento</h3>
+                                    <h3 class="form_subtitle">SSelecciona tu tipo de evento</h3>
                                     <div class="form_rsvp">
                                         <div class="form_row_rsvp">
                                             <div class="checkbox_container">
