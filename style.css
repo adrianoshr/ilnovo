@@ -411,3 +411,8 @@ label.error { width:100%; display: block; float: right; color: red; padding:5px 
 .footer_menu ul li a{ font-size:14px; margin:0 0 10px 10px; display:block; float:left; padding:5px 10px; }
 .footer_menu ul li.selected a{ font-size:14px; margin:0 0 10px 10px; display:block; float:left; padding:5px 10px;background-color:#814993;}
 }
+.cotizaciones {
+	padding:8px;
+	color:#872396;
+	font-size: 15px;
+}
