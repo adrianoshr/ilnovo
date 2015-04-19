@@ -17,8 +17,8 @@ if(isset($_POST['submitted'])) {
   $email = trim($_POST['email']);
   $comment = trim($_POST['comment']);
 
-  $emailTo = "adrian@one-man-studio.com";
-  $subject = 'COTIZACION de la página web de Il Novo '.$name;			
+  $emailTo = "adrian@one-man-studio.com, corp_innova@hotmail.com";
+  $subject = 'COTIZACION de la pagina web de Il Novo '.$name;			
   $body = "Name: $name \n\n Email: $email \n\n Phone: $phone \n\n  Message: $comment \n\n Event will be attending at:\n\n $event1 \n $event2 \n $event3 \n $event4 \n\n Main meal selection:  $mainmeal \n\n Desert selection: $desert \n\n Menu notes: $menunotes \n\n Number of guests: $guests";
   $headers = 'From: '. $name .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
   @mail($emailTo, $subject, $body, $headers);						
@@ -30,9 +30,9 @@ if(isset($_POST['submitted'])) {
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
-  <meta name="author" content="FamousThemes" />
-  <meta name="description" content="Get in the spotlight" />
-  <meta name="keywords" content="premium css templates, premium wordpress themes, famous themes, themeforest" />
+  <meta name="author" content="Il Novo" />
+  <meta name="description" content="cotizacion de bodas y banquetes" />
+  <meta name="keywords" content="cotizacion de bodas y banquetes" />
   <?php include_once("snippets/head.php");?>
   <title>Cotización para bodas y eventos en México | Il Novo Catering</title>
   <link rel="stylesheet" type="text/css" media="all" href="style.css" />
