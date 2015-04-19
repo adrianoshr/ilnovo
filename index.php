@@ -97,7 +97,7 @@
                                                                                     <li>
                                                                                         <a href="#"><img src="images/slider/organizacion-de-bodas-vintage-en-mexico-il-novo-catering.jpg" alt="Organizacion de bodas vintage en Mexico | Il Novo Catering  " title="Organizacion de bodas vintage en Mexico | Il Novo Catering   "/></a>
                                                                                         <div class="flex-caption">
-                                                                                            <div class="caption_title_line"><h2>Organizamos todo tipo de eventos</h2><p>Porque los momentos importantes de tu vida merecen una gran celebración Il Novo Catering es la mejor opción.</p></div>
+                                                                                            <div class="caption_title_line"><h2>OOrganizamos todo tipo de eventos</h2><p>Porque los momentos importantes de tu vida merecen una gran celebración Il Novo Catering es la mejor opción.</p></div>
                                                                                         </div>
                                                                                     </li>
                                                                                     <li>

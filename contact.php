@@ -7,8 +7,8 @@ if(isset($_POST['submitted'])) {
   $email = trim($_POST['email']);
   $comment = trim($_POST['comment']);
 
-  $emailTo = "adrian@one-man-studio.com";
-  $subject = 'Mensaje de la ZONA DE CONTACTO de la página web de Il Novo'.$name;			
+  $emailTo = "adrian@one-man-studio.com, corp_innova@hotmail.com";
+  $subject = 'Mensaje de la ZONA DE CONTACTO de la pagina web de Il Novo'.$name;			
   $body = "Name: $name \n\n Email: $email \n\n Phone: $phone \n\n  Message: $comment";
   $headers = 'From: '. $name .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
   @mail($emailTo, $subject, $body, $headers);						
